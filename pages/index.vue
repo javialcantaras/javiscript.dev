@@ -1,12 +1,9 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
-      <h1 class="title">
-        javiscript.dev
-      </h1>
+      <img src='@/static/javiscript-logo.svg' />
       <h2 class="subtitle">
-        Blog de tecnología
+        Blog de programación
       </h2>
       <div class="links">
         <a
