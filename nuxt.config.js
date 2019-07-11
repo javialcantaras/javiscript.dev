@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Blog de tecnologia' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ]
   },
   /*
