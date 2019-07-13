@@ -1,22 +1,29 @@
 <template>
   <div class='article-list'>
     <div
-    class='element' v-for='(img, index) in images' :key='index'>
-      <img class='absolute' :src='getImage(img)' alt="">
+      class='element'
+      v-for='article in articles'
+      :key='article.name'>
+      <img class='absolute' :src='getImage(article.name)' :alt='article.name' />
       <div class='absolute shadow'></div>
-        <div class='article__info'>
-          <span>10 minutos de lectura</span>
-          <NLink :to="{name: 'article-id', params: { id: img } }">
-            <h2>Crear chatbot con amazon lex</h2>
-          </NLink>
-        </div>
+      <div class='article__info'>
+        <span>{{article.readingTime}} de lectura</span>
+        <NLink :to="{name: 'article-slug', params: { slug: article.name } }">
+          <h2>{{article.title}}</h2>
+        </NLink>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  
   name: 'article-list',
+
+  props: {
+    articles: Array
+  },
 
   data: () => ({
     images: ['chatbot','code','chatbot','code','chatbot','code', 'chatbot', 'code']
@@ -54,6 +61,7 @@ export default {
       background: #ececec
       position: relative
       color: #fff
+      transition: all .2s ease-in
 
       @include for-tablet-portrait-up
         flex: 0 0 50%
@@ -61,6 +69,9 @@ export default {
         flex: 0 0 33%
 
       &:hover
+        transform: scale(1.04)
+        z-index: 1
+
         .shadow
           background: linear-gradient(to bottom, rgba(185, 185, 185, 0) 7%, rgba(0, 0, 0, 0.8) 57%)
         .article__info
@@ -74,7 +85,7 @@ export default {
         background: linear-gradient(to bottom, rgba(185, 185, 185, 0) 7%, rgba(0, 0, 0, 0.6) 86%)
 
       .article__info
-        transition: all .1s linear
+        transition: all .1s ease-in
         position: absolute
         left: 0
         bottom: 0
