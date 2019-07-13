@@ -6,7 +6,7 @@ readingTime: '10 minutos'
 description: Aprenderás a entender vuejs y a crear tu primer proyecto de vuejs
 ---
 
-# h1 Heading 8-)
+# Como crear tu primer proyecto de vuejs
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading

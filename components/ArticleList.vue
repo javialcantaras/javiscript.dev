@@ -1,22 +1,29 @@
 <template>
   <div class='article-list'>
     <div
-    class='element' v-for='(img, index) in images' :key='index'>
-      <img class='absolute' :src='getImage(img)' alt="">
+      class='element'
+      v-for='article in articles'
+      :key='article.name'>
+      <img class='absolute' :src='getImage(article.name)' :alt='article.name' />
       <div class='absolute shadow'></div>
-        <div class='article__info'>
-          <span>10 minutos de lectura</span>
-          <NLink :to="{name: 'article-slug', params: { slug: img } }">
-            <h2>Crear chatbot con amazon lex</h2>
-          </NLink>
-        </div>
+      <div class='article__info'>
+        <span>{{article.readingTime}} de lectura</span>
+        <NLink :to="{name: 'article-slug', params: { slug: article.name } }">
+          <h2>{{article.title}}</h2>
+        </NLink>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  
   name: 'article-list',
+
+  props: {
+    articles: Array
+  },
 
   data: () => ({
     images: ['chatbot','code','chatbot','code','chatbot','code', 'chatbot', 'code']
