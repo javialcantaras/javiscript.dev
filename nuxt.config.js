@@ -25,13 +25,20 @@ module.exports = {
     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+      const rule = config.module.rules.find(r => r.test.toString() === '/\\.(webp)$/i')
+        config.module.rules.splice(config.module.rules.indexOf(rule), 1)
+        
         config.module.rules.push({
+          test: /\.md$/,
+          loader: 'frontmatter-markdown-loader',
+          options: {
+            vue: true
+          }
+        },{
           enforce: 'pre',
           test: /\.(js|vue)$/,
           exclude: /(node_modules)/
         })
-      }
     }
   }
 }
