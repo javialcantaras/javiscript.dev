@@ -1,6 +1,6 @@
 <template>
 <div>
-  <blog-article>
+  <blog-article :articleData='articleData'>
     <no-ssr>
       <DynamicMarkdown
         :render-func="renderFunc"
@@ -17,15 +17,12 @@ import DynamicMarkdown from '@/components/markdown/DynamicMarkdown'
 export default {
 
   async asyncData ({params, app}) {
-    const fileContent = await import(`~/contents/create-vuejs-project.md`)
+    const fileContent = await import(`~/contents/blog/articles/${params.slug}.md`)
     const attr = fileContent.attributes
     return {
-      name: params.slug,
-      related: attr.related,
+      articleData: attr,
       renderFunc: fileContent.vue.render,
       staticRenderFuncs: fileContent.vue.staticRenderFns,
-      title: attr.title,
-      urlTranslation: attr.urlTranslation
     }
   },
 

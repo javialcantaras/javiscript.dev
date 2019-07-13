@@ -3,7 +3,7 @@
     <blog-header class='article__header'/>
     <no-ssr>
       <parallax :speedFactor='0.25' >
-        <img src="~/assets/chatbot.png">
+        <img :src='getImage()'>
       </parallax>
     </no-ssr>
 
@@ -22,8 +22,18 @@ import Header from './Header'
 export default {
   name: 'page-with-parallax',
 
+  props: {
+    articleData: Object
+  },
+
   components: {
     Parallax, 'blog-header': Header
+  },
+
+  methods: {
+    getImage() {
+      return require(`~/assets/${this.articleData.name}.png`)
+    }
   }
 
 }
