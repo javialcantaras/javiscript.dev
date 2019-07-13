@@ -11,7 +11,10 @@ import Page from '~/components/Page'
 import ArticleList from '~/components/ArticleList'
 
 export default {
-  components: { Page, ArticleList }
+  components: { Page, ArticleList },
+  transition: {
+    name: 'slide-fade'
+  },
 }
 </script>
 

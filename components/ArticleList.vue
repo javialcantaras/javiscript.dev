@@ -6,7 +6,7 @@
       <div class='absolute shadow'></div>
         <div class='article__info'>
           <span>10 minutos de lectura</span>
-          <NLink :to="{name: 'article-id', params: { id: img } }">
+          <NLink :to="{name: 'article-slug', params: { slug: img } }">
             <h2>Crear chatbot con amazon lex</h2>
           </NLink>
         </div>
@@ -54,6 +54,7 @@ export default {
       background: #ececec
       position: relative
       color: #fff
+      transition: all .2s ease-in
 
       @include for-tablet-portrait-up
         flex: 0 0 50%
@@ -61,6 +62,9 @@ export default {
         flex: 0 0 33%
 
       &:hover
+        transform: scale(1.04)
+        z-index: 1
+
         .shadow
           background: linear-gradient(to bottom, rgba(185, 185, 185, 0) 7%, rgba(0, 0, 0, 0.8) 57%)
         .article__info
@@ -74,7 +78,7 @@ export default {
         background: linear-gradient(to bottom, rgba(185, 185, 185, 0) 7%, rgba(0, 0, 0, 0.6) 86%)
 
       .article__info
-        transition: all .1s linear
+        transition: all .1s ease-in
         position: absolute
         left: 0
         bottom: 0
