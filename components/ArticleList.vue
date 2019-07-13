@@ -3,6 +3,8 @@
     <div
       class='element'
       v-for='article in articles'
+      @click='article.click=true'
+      :class='{"click-animation": article.click}'
       :key='article.name'>
       <img class='absolute' :src='getImage(article.name)' :alt='article.name' />
       <div class='absolute shadow'></div>
@@ -77,7 +79,6 @@ export default {
         .article__info
           bottom: .5em
         
-
       img
         object-fit: cover
 

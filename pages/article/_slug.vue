@@ -26,6 +26,10 @@ export default {
     }
   },
 
+  transition: {
+    name: 'fade'
+  },
+
   components: {
     'blog-article': article, DynamicMarkdown
   }
@@ -33,6 +37,9 @@ export default {
 </script>
 
 <style lang='sass'>
-
+.fade-enter-active, .fade-leave-active
+  transition: opacity .2s
+.fade-enter, .fade-leave-to
+  opacity: 0
 </style>
 

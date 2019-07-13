@@ -26,12 +26,15 @@ export default {
   components: { Page, ArticleList },
   
   transition: {
-    name: 'slide-fade'
+    name: 'fade'
   },
 }
 </script>
 
 <style lang='sass'>
-
+  .fade-enter-active, .fade-leave-active
+    transition: opacity .2s
+  .fade-enter, .fade-leave-to
+    opacity: 0
 </style>
 
