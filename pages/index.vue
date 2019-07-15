@@ -23,6 +23,17 @@ export default {
     .then(articles => ({ articles }))
   },
 
+  head () {
+    return {
+      title: this.$t('home_title'),
+      meta: [
+        { name: "author", content: "Javier Alcantara" },
+        { name: "description", property: "og:description", content: this.$t('home_description'), hid: "description" },
+        { property: "og:title", content: this.$t('home_title') }
+      ]
+    };
+  },
+
   components: { Page, ArticleList },
   
   transition: {

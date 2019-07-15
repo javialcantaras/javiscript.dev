@@ -9,6 +9,10 @@
 
     <div class='article__content'>
       <article>
+        <div class='article__content__header'>
+          <h1>{{articleData.title}}</h1>
+          <span>{{articleData.readingTime}} {{$t('ofReading')}} | {{articleData.date}}</span>
+        </div>
         <slot/>
       </article>
     </div>
@@ -47,8 +51,8 @@ export default {
 
 <style lang='sass'>
   @import '~assets/sass/media-queries'
-
-  $base-color: #40B77E;
+  
+  $base-color: #55bf8c;
   $title-color: #5a5b5d;
 
   .Masthead
@@ -66,23 +70,28 @@ export default {
   
   .article__content
     padding: 0 1em 
+    font-size: 1.2em
+    
     @include for-tablet-landscape-up
       padding: 0 10em 
-    
+
+    .article__content__header
+      padding: 2em 0 1em
+      
+      h1 
+        font-size: 3em
+        color: $title-color
+        font-weight: 600
+      
+      span
+        color: $base-color
 
     article 
       color: #7b8188
-      font-size: 1.2em
     
       p
         line-height: 180%
         text-align: justify
-
-      h1 
-        font-size: 3em
-        padding: 1em 0 .5em
-        color: $title-color
-        font-weight: 600
         
       h2 
         font-size: 2.5em
@@ -104,9 +113,10 @@ export default {
       code.hljs
         background: #f1f1f1
         border-radius: 4px
-        padding: 0.1em 0.5em
+        padding: 0 0.5em
         border: 1px solid #cecece
         display: inline
+        font-size: .8em
       
       pre > code.hljs
         margin: 1em 0

@@ -1,3 +1,6 @@
+import home from './home'
+
 export default {
-  title: 'hola'
+  ...home,
+  ofReading: 'de lectura'
 } 

@@ -6,7 +6,6 @@ readingTime: '10 minutos'
 description: Aprenderás a entender vuejs y a crear tu primer proyecto de vuejs
 ---
 
-# Como crear tu primer proyecto de vuejs
 Hoy vamos a ver como crear nuestro primer proyecto el framework de vuejs, para empezar vamos a ver que es vue y que es lo que le hace mas interesante.
 ## Que es vuejs
 Vuejs es un framework **progresivo**, Lorem fistrum diodeno por la gloria de mi madre pupita benemeritaar qué dise usteer benemeritaar a wan. Por la gloria de mi madre va usté muy cargadoo no te digo trigo por no llamarte Rodrigor benemeritaar benemeritaar te voy a borrar el cerito pupita hasta luego Lucas tiene musho peligro. Fistro diodeno por la gloria de mi madre ese hombree mamaar mamaar no te digo trigo por no llamarte Rodrigor. Está la cosa muy malar sexuarl por la gloria de mi madre al ataquerl caballo blanco caballo negroorl. Benemeritaar se calle ustée benemeritaar ahorarr papaar papaar pecador diodeno ahorarr tiene musho peligro condemor va usté muy cargadoo. Hasta luego Lucas condemor a gramenawer caballo blanco caballo negroorl hasta luego Lucas mamaar está la cosa muy malar. Hasta luego Lucas hasta luego Lucas no puedor sexuarl llevame al sircoo apetecan ese hombree ahorarr ese hombree qué dise usteer.
