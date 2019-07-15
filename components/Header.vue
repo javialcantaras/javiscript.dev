@@ -1,9 +1,12 @@
 <template>
   <header>
-    <aside class='header__logo'>
+    <aside v-if='isHome' class='header__logo'>
       <img src='@/static/javiscript-logo.svg' />
-      <h1 v-if='isHome' class='header-title'>{{title}}</h1>
-      <span v-else class='header-title'>{{title}}</span>
+      <h1 class='header-title'>{{title}}</h1>
+    </aside>
+    <aside v-else class='header__logo'>
+      <nuxt-link :to='localePath("index")'><img src='@/static/javiscript-logo.svg' /></nuxt-link>
+      <span class='header-title'>{{title}}</span>
     </aside>
   </header>
 </template>

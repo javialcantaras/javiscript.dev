@@ -26,13 +26,40 @@ export default {
     }
   },
 
+  head() {
+    const title = `${this.articleData.title} | javascript.dev`
+    
+    return {
+      title,
+      meta: [
+        { name: "author", content: "Javier Alcantara" },
+        { name: "description", property: "og:description", content: this.articleData.description, hid: "description" },
+        { property: "og:title", content: title },
+        { property: "og:image", content: this.ogImage }
+      ]
+    }
+  },
+
+  transition: {
+    name: 'fade'
+  },
+
   components: {
     'blog-article': article, DynamicMarkdown
+  },
+
+  computed: {
+    ogImage () {
+      return `${process.env.baseUrl}/images/blog/${this.articleData.name}/_thumbnail.jpg`;
+    },
   }
 }
 </script>
 
 <style lang='sass'>
-
+.fade-enter-active, .fade-leave-active
+  transition: opacity .2s
+.fade-enter, .fade-leave-to
+  opacity: 0
 </style>
 

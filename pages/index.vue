@@ -23,15 +23,29 @@ export default {
     .then(articles => ({ articles }))
   },
 
+  head () {
+    return {
+      title: this.$t('home_title'),
+      meta: [
+        { name: "author", content: "Javier Alcantara" },
+        { name: "description", property: "og:description", content: this.$t('home_description'), hid: "description" },
+        { property: "og:title", content: this.$t('home_title') }
+      ]
+    };
+  },
+
   components: { Page, ArticleList },
   
   transition: {
-    name: 'slide-fade'
+    name: 'fade'
   },
 }
 </script>
 
 <style lang='sass'>
-
+  .fade-enter-active, .fade-leave-active
+    transition: opacity .2s
+  .fade-enter, .fade-leave-to
+    opacity: 0
 </style>
 

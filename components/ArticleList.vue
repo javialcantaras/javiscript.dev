@@ -3,14 +3,16 @@
     <div
       class='element'
       v-for='article in articles'
+      @click='article.click=true'
+      :class='{"click-animation": article.click}'
       :key='article.name'>
       <img class='absolute' :src='getImage(article.name)' :alt='article.name' />
       <div class='absolute shadow'></div>
       <div class='article__info'>
         <span>{{article.readingTime}} de lectura</span>
-        <NLink :to="{name: 'article-slug', params: { slug: article.name } }">
+        <nuxt-link :to="localePath({name: 'article-slug', params: { slug: article.name }})">
           <h2>{{article.title}}</h2>
-        </NLink>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -77,7 +79,6 @@ export default {
         .article__info
           bottom: .5em
         
-
       img
         object-fit: cover
 
@@ -97,6 +98,7 @@ export default {
             text-decoration:  none
 
         h2
+          min-height: 1.6em
           text-shadow: 1px 1px #383838
           color: #fff
 

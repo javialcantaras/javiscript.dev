@@ -1,3 +1,6 @@
+import articles from './contents/blog/articles'
+import i18nConfig from './i18n.config'
+
 module.exports = {
   /*
   ** Headers of the page
@@ -7,16 +10,18 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Blog de tecnologia' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
+
+  modules: ['nuxt-i18n'],
+
+  i18n: i18nConfig,
+
   /*
   ** Build configuration
   */
@@ -40,6 +45,10 @@ module.exports = {
           exclude: /(node_modules)/
         })
     }
+  },
+  generate: {
+    routes: []
+    .concat(articles.map(w => `/article/${w}`))
   }
 }
 

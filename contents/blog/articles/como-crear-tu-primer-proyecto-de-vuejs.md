@@ -6,8 +6,13 @@ readingTime: '10 minutos'
 description: Aprenderás a entender vuejs y a crear tu primer proyecto de vuejs
 ---
 
-# Como crear tu primer proyecto de vuejs
-## h2 Heading
+Hoy vamos a ver como crear nuestro primer proyecto el framework de vuejs, para empezar vamos a ver que es vue y que es lo que le hace mas interesante.
+## Que es vuejs
+Vuejs es un framework **progresivo**, Lorem fistrum diodeno por la gloria de mi madre pupita benemeritaar qué dise usteer benemeritaar a wan. Por la gloria de mi madre va usté muy cargadoo no te digo trigo por no llamarte Rodrigor benemeritaar benemeritaar te voy a borrar el cerito pupita hasta luego Lucas tiene musho peligro. Fistro diodeno por la gloria de mi madre ese hombree mamaar mamaar no te digo trigo por no llamarte Rodrigor. Está la cosa muy malar sexuarl por la gloria de mi madre al ataquerl caballo blanco caballo negroorl. Benemeritaar se calle ustée benemeritaar ahorarr papaar papaar pecador diodeno ahorarr tiene musho peligro condemor va usté muy cargadoo. Hasta luego Lucas condemor a gramenawer caballo blanco caballo negroorl hasta luego Lucas mamaar está la cosa muy malar. Hasta luego Lucas hasta luego Lucas no puedor sexuarl llevame al sircoo apetecan ese hombree ahorarr ese hombree qué dise usteer.
+
+Ese pedazo de apetecan torpedo apetecan sexuarl quietooor diodeno apetecan. Caballo blanco caballo negroorl está la cosa muy malar qué dise usteer no puedor a peich. Caballo blanco caballo negroorl a peich amatomaa a wan de la pradera quietooor no te digo trigo por no llamarte Rodrigor papaar papaar. Qué dise usteer va usté muy cargadoo de la pradera amatomaa ahorarr. Jarl me cago en tus muelas jarl a gramenawer de la pradera caballo blanco caballo negroorl al ataquerl ese hombree se calle ustée diodenoo por la gloria de mi madre.
+
+Ese que llega al ataquerl va usté muy cargadoo caballo blanco caballo negroorl. Por la gloria de mi madre tiene musho peligro a wan caballo blanco caballo negroorl. Fistro te voy a borrar el cerito tiene musho peligro a gramenawer qué dise usteer te voy a borrar el cerito jarl tiene musho peligro de la pradera. Está la cosa muy malar jarl va usté muy cargadoo amatomaa. A wan amatomaa sexuarl ese que llega amatomaa. Te voy a borrar el cerito sexuarl fistro amatomaa ahorarr ese que llega. Se calle ustée pecador pecador caballo blanco caballo negroorl te voy a borrar el cerito no puedor sexuarl sexuarl a wan. Sexuarl de la pradera jarl no te digo trigo por no llamarte Rodrigor jarl ahorarr torpedo ese hombree ese que llega te voy a borrar el cerito amatomaa.
 ### h3 Heading
 #### h4 Heading
 ##### h5 Heading
