@@ -5,7 +5,7 @@
       <h1 class='header-title'>{{title}}</h1>
     </aside>
     <aside v-else class='header__logo'>
-      <NLink to='/'><img src='@/static/javiscript-logo.svg' /></NLink>
+      <nuxt-link :to='localePath("index")'><img src='@/static/javiscript-logo.svg' /></nuxt-link>
       <span class='header-title'>{{title}}</span>
     </aside>
   </header>

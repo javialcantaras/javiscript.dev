@@ -10,9 +10,9 @@
       <div class='absolute shadow'></div>
       <div class='article__info'>
         <span>{{article.readingTime}} de lectura</span>
-        <NLink :to="{name: 'article-slug', params: { slug: article.name } }">
+        <nuxt-link :to="localePath({name: 'article-slug', params: { slug: article.name }})">
           <h2>{{article.title}}</h2>
-        </NLink>
+        </nuxt-link>
       </div>
     </div>
   </div>

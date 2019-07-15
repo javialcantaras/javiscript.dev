@@ -14,9 +14,9 @@
     </div>
 
     <div class='article__footer'>
-      <NLink to='/'>
+      <nuxt-link :to='localePath("index")'>
         <i class="large material-icons">arrow_back</i> Volver al home
-      </NLink>
+      </nuxt-link>
     </div>
   </div>
 </template>
