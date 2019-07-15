@@ -1,6 +1,7 @@
 <template>
   <page>
     <div>
+      {{$t('title')}}
       <article-list :articles='articles'/>
     </div>
   </page>

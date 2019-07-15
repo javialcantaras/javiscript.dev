@@ -17,6 +17,7 @@
   "dependencies": {
     "highlight.js": "^9.15.8",
     "nuxt": "^2.0.0",
+    "nuxt-i18n": "^5.12.7",
     "vue-parallaxy": "^1.1.1"
   },
   "devDependencies": {

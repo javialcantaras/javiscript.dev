@@ -1,4 +1,5 @@
 import articles from './contents/blog/articles'
+import i18nConfig from './i18n.config'
 
 module.exports = {
   /*
@@ -16,10 +17,11 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
+
+  modules: ['nuxt-i18n'],
+
+  i18n: i18nConfig,
+
   /*
   ** Build configuration
   */
