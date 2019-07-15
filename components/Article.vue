@@ -49,6 +49,7 @@ export default {
   @import '~assets/sass/media-queries'
 
   $base-color: #40B77E;
+  $title-color: #5a5b5d;
 
   .Masthead
     min-height: 60vh !important
@@ -70,24 +71,29 @@ export default {
     
 
     article 
-      color: #6b6b6b
+      color: #7b8188
+      font-size: 1.2em
+    
+      p
+        line-height: 180%
+        text-align: justify
 
       h1 
         font-size: 3em
         padding: 1em 0 .5em
-        color: $base-color
-        font-weight: 400
+        color: $title-color
+        font-weight: 600
         
       h2 
         font-size: 2.5em
         padding: 1.5em 0 .2em
-        color: $base-color
+        color: $title-color
         font-weight: 400
 
       h3 
         font-size: 1.8em
         padding: .5em 0 .2em
-        color: $base-color
+        color: $title-color
         font-weight: 300
 
       a
@@ -106,6 +112,7 @@ export default {
         margin: 1em 0
         display: block
         padding: 1em
+        font-size: .8em
 
       img
         width: 100%

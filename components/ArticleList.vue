@@ -98,6 +98,7 @@ export default {
             text-decoration:  none
 
         h2
+          min-height: 1.6em
           text-shadow: 1px 1px #383838
           color: #fff
 
