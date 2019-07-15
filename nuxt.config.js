@@ -1,3 +1,5 @@
+import articles from './contents/blog/articles'
+
 module.exports = {
   /*
   ** Headers of the page
@@ -40,6 +42,10 @@ module.exports = {
           exclude: /(node_modules)/
         })
     }
+  },
+  generate: {
+    routes: []
+    .concat(articles.map(w => `/article/${w}`))
   }
 }
 
