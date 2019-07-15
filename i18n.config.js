@@ -5,6 +5,7 @@ export default {
     { code: 'es', iso: 'es-ES', file: 'es.js' }
   ],
   defaultLocale: 'es',
+  seo: true,
   vueI18n: {
     messages
   }
