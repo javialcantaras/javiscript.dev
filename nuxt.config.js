@@ -46,6 +46,11 @@ module.exports = {
         })
     }
   },
+
+  router: {
+    base: ''
+  },
+
   generate: {
     routes: []
     .concat(articles.map(w => `/article/${w}`))
