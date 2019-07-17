@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import article from '@/components/article'
-import DynamicMarkdown from '@/components/markdown/DynamicMarkdown'
+import article from '@/components/Article'
+import DynamicMarkdown from '@/components/Markdown/DynamicMarkdown'
 
 export default {
 

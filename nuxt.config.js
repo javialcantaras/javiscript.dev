@@ -29,7 +29,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend (config) {
       const rule = config.module.rules.find(r => r.test.toString() === '/\\.(webp)$/i')
         config.module.rules.splice(config.module.rules.indexOf(rule), 1)
         
@@ -46,6 +46,11 @@ module.exports = {
         })
     }
   },
+
+  router: {
+    base: ''
+  },
+
   generate: {
     routes: []
     .concat(articles.map(w => `/article/${w}`))

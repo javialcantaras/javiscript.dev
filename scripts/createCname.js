@@ -1,2 +1,2 @@
 const fs = require('fs')
-fs.writeFile("dist/CNAME", "javiscript.dev", function(err) {})
+fs.writeFile("dist/CNAME", "javiscript.dev", () => {})

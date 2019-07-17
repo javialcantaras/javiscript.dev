@@ -22,12 +22,6 @@
         targets.forEach((target) => {
           hljs.highlightBlock(target)
         })
-      },
-      extraComponentLoader () {
-        if (!this.extraComponent) {
-          return null
-        }
-        return () => import(`~/components/blog/${this.extraComponent}.vue`)
       }
     },
     mounted() {
