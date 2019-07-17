@@ -1,11 +1,11 @@
 <template>
   <header>
     <aside v-if='isHome' class='header__logo'>
-      <img src='@/static/javiscript-logo.svg' />
+      <img src='@/static/javiscript-logo.png' />
       <h1 class='header-title'>{{title}}</h1>
     </aside>
     <aside v-else class='header__logo'>
-      <nuxt-link :to='localePath("index")'><img src='@/static/javiscript-logo.svg' /></nuxt-link>
+      <nuxt-link :to='localePath("index")'><img src='@/static/javiscript-logo.png' /></nuxt-link>
       <span class='header-title'>{{title}}</span>
     </aside>
   </header>
@@ -44,6 +44,6 @@ export default {
       font-size: .8em
 
     img
-      width: 15em
+      width: 13em
   
 </style>
